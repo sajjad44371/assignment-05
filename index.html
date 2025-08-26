@@ -15,10 +15,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css links -->
-    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- header section start -->
+    <header class="sm:max-w-[600px] md:max-w-[700px] lg:max-w-[960px] xl:max-w-[1200px] 2xl:max-w-[1350px] mx-auto flex justify-between items-center py-6">
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="./assets/logo.png" class="h-[45px] w-[45px]" alt="">
+            </div>
+            <div>
+                <p class="hind-madurai text-xl text-[#006747] font-extrabold leading-5 ml-3">Emergency<br>Service</p>
+            </div>
+        </div>
+        <div class="flex justify-between items-center gap-5">
+            <div class="bg-[#41ff6b1a] rounded-[50px] py-2 px-6">
+                <span>0</span><img src="./assets/heart.png" class="h-[30px] w-[30px] inline ml-2.5" alt="">
+            </div>
+            <div class="bg-[#41ff6b1a] rounded-[50px] py-2 px-6">
+                <span>100</span><img src="./assets/coin.png" class="h-6 w-6 inline ml-2.5" alt="">
+            </div>
+            <button class="inter font-semibold text-white rounded-[50px] py-2 px-6 bg-[#00a63e]">
+                <span>0</span> Copy
+            </button>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- banner section start -->
+    <section class="banner bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex justify-center items-center">
+        <div class="banner-content text-center py-5">
+            <img src="./assets/logo.png" class="block mx-auto w-[10%]" alt="">
+            <h1 class="my-3 hind-madurai text-3xl md:text-[40px] font-bold text-white">Emergency Service Directory</h1>
+            <p class="hind-madurai text-lg md:text-xl font-semibold text-white md:px-2.5 sm:px-2">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+    </section>
+    <!-- banner section end -->
 
     <!-- js link -->
     <script src="./js/script.js"></script>
