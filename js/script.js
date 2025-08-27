@@ -143,3 +143,58 @@ callButton("btn-call-9").addEventListener("click", function () {
     }
     
 })
+
+// clear history button event ======================================================================================
+document.getElementById("clear-history")
+    .addEventListener("click", function() {
+        document.getElementById("history-section").innerHTML = "";
+    })
+
+// copy button event =================================================================================================
+function copyTextToClipboard(text) {
+    if(navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    } else {
+      // fallback (older browsers)
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      return Promise.resolve();
+    }
+  }
+
+
+const buttonCopy = document.getElementsByClassName("btn-copy");
+for(const btnCopy of buttonCopy) {
+    btnCopy.addEventListener("click", function(){
+        
+
+        // copy count 
+        const copyCounter = parseInt(document.getElementById("copy-count").innerText);
+        let count = 0;
+        count++;
+        const finalCopyCount = copyCounter + count;
+        document.getElementById("copy-count").innerText = finalCopyCount;
+
+        // copy to clipboard 
+        const targetId = button.getAttribute("data-target"); // যেমন "anti-num"
+        const numberElement = document.getElementById(targetId);
+
+        if(numberElement) {
+            const number = numberElement.innerText.trim();
+            copyTextToClipboard(number)
+                .then(() => {
+                    alert("Copied: " + number);
+                })
+                .catch(err => {
+                    alert("Failed to copy");
+                    console.error(err);
+                });
+        }
+
+    })
+}
+

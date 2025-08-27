@@ -38,7 +38,7 @@
                 <span id="coin" class="hind-madurai">100</span><img src="./assets/coin.png" class="h-6 w-6 inline ml-0 sm:ml-2.5" alt="">
             </div>
             <button class="inter font-semibold text-white rounded-[50px] py-2 px-6 bg-[#00a63e]">
-                <span>0</span> Copy
+                <span id="copy-count">0</span> Copy
             </button>
         </div>
     </header>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="national-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-1" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="police-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-2" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -121,7 +121,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="fire-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-3" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -145,7 +145,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="ambulance-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-4" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="w&c-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-5" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -193,7 +193,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="anti-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-6" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -217,7 +217,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="elc-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-7" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -241,7 +241,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="brac-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-8" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -265,7 +265,7 @@
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
                             <div class="copy flex-1/2">
-                                <button class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button data-target="rail-num" class="btn-copy cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full text-[#5c5c5c] p-2 hover:bg-[#00a63e] hover:text-white duration-300"><i class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <div class="call flex-1/2">
                                 <button id="btn-call-9" class="cursor-pointer border border-[#d4d6d5] rounded-lg text-center w-full bg-[#00a63e] text-white p-2 hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300"><i class="fa-solid fa-phone"></i> Call</button>
@@ -284,7 +284,7 @@
                             <p class="text-lg font-medium"><i class="fa-regular fa-clock"></i> Call History</p>
                         </div>
                         <div>
-                            <button class="cursor-pointer inter font-semibold text-white rounded-[50px] py-2 px-6 bg-[#00a63e] border border-transparent hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300 hover:border">
+                            <button id="clear-history" class="cursor-pointer inter font-semibold text-white rounded-[50px] py-2 px-6 bg-[#00a63e] border border-transparent hover:text-[#5c5c5c] hover:border-[#d4d6d5] hover:bg-white duration-300 hover:border">
                                 Clear
                             </button>
                         </div>
