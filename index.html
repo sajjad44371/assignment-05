@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- header section start -->
-    <header class="sm:max-w-[600px] 2xl:max-w-[1800px] mx-auto flex flex-col sm:flex-row justify-between items-center py-6">
+    <header class="sm:max-w-[600px] md:max-w-[700px] lg:max-w-[990px] xl:max-w-[1380px] 2xl:max-w-[1800px] mx-auto flex flex-col sm:flex-row justify-between items-center py-6">
         <a href="./index.html">
             <div class="flex justify-between items-center">
                 <div>
@@ -32,10 +32,10 @@
         </a>
         <div class="flex justify-between items-center gap-5 mt-5 sm:mt-0 px-2.5 sm:px-0">
             <div class="bg-[#41ff6b1a] rounded-[50px] py-2 px-6 text-center sm:text-left">
-                <span class="hind-madurai" id="heart-count">0</span><img src="./assets/heart.png" class="h-[30px] w-[30px] inline ml-0 sm:ml-2.5" alt="">
+                <span class="hind-madurai" id="heart-count">0</span><img src="./assets/heart.png" class="h-[30px] w-[30px] inline ml-2 sm:ml-2.5" alt="">
             </div>
             <div class="bg-[#41ff6b1a] rounded-[50px] py-2 px-6 text-center sm:text-left">
-                <span id="coin" class="hind-madurai">100</span><img src="./assets/coin.png" class="h-6 w-6 inline ml-0 sm:ml-2.5" alt="">
+                <span id="coin" class="hind-madurai">100</span><img src="./assets/coin.png" class="h-6 w-6 inline ml-2 sm:ml-2.5" alt="">
             </div>
             <button class="inter font-semibold text-white rounded-[50px] py-2 px-6 bg-[#00a63e]">
                 <span id="copy-count">0</span> Copy
@@ -56,19 +56,19 @@
 
     <!-- main section start -->
     <main class="bg-[#41ff6b1a]">
-        <div class="sm:max-w-[600px] 2xl:max-w-[1800px] pt-12 pb-[86px] mx-auto flex flex-col md:flex-row 2xl:flex-row justify-between items-center gap-[30px]">
-            <div class="card-container flex-3/4 grid 2xl:grid-cols-3 sm:grid-cols-1 px-0 md:px-2.5  gap-[30px]">
+        <div class="sm:max-w-[600px] md:max-w-[700px] lg:max-w-[990px] xl:max-w-[1380px] 2xl:max-w-[1800px] mx-auto px-5 md:px-0 pt-12 pb-[86px]  flex flex-col lg:flex-row 2xl:flex-row justify-between items-center gap-[20px]">
+            <div class="card-container flex-3/4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 sm:grid-cols-1 px-0 md:px-2.5 gap-[30px]">
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">National Emergency Number</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">National Emergency Number</h3>
                             <p id="national-title" class="hind-madurai text-lg text-[#5c5c5c]">National Emergency</p>
-                            <h2 id="national-num" class="inter text-3xl font-bold mt-6 mb-[3px]">999</h2>
+                            <h2 id="national-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">999</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">All</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -83,16 +83,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#DFEFFF] flex justify-center items-center"><img src="./assets/police.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Police Helpline Number</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Police Helpline Number</h3>
                             <p id="police-title" class="hind-madurai text-lg text-[#5c5c5c]">Police</p>
-                            <h2 id="police-num" class="inter text-3xl font-bold mt-6 mb-[3px]">999</h2>
+                            <h2 id="police-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">999</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Police</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -107,16 +107,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/fire-service.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Fire Service Number</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Fire Service Number</h3>
                             <p id="fire-title" class="hind-madurai text-lg text-[#5c5c5c]">Fire Service</p>
-                            <h2 id="fire-num" class="inter text-3xl font-bold mt-6 mb-[3px]">999</h2>
+                            <h2 id="fire-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">999</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Fire</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -131,16 +131,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/ambulance.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Ambulance Service</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Ambulance Service</h3>
                             <p id="ambulance-title" class="hind-madurai text-lg text-[#5c5c5c]">Ambulance</p>
-                            <h2 id="ambulance-num" class="inter text-3xl font-bold mt-6 mb-[3px]">1994-999999</h2>
+                            <h2 id="ambulance-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">1994-999999</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Health</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -155,16 +155,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Women & Child Helpline</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Women & Child Helpline</h3>
                             <p id="w&c-title" class="hind-madurai text-lg text-[#5c5c5c]">Women & Child Helpline</p>
-                            <h2 id="w&c-num" class="inter text-3xl font-bold mt-6 mb-[3px]">109</h2>
+                            <h2 id="w&c-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl font-bold mt-6 mb-[3px]">109</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Help</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -179,16 +179,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Anti-Corruption Helpline</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Anti-Corruption Helpline</h3>
                             <p id="anti-title" class="hind-madurai text-lg text-[#5c5c5c]">Anti-Corruption</p>
-                            <h2 id="anti-num" class="inter text-3xl font-bold mt-6 mb-[3px]">106</h2>
+                            <h2 id="anti-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">106</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Govt.</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -203,16 +203,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
                             <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Electricity Helpline</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Electricity Helpline</h3>
                             <p id="elc-title" class="hind-madurai text-lg text-[#5c5c5c]">Electricity Outage</p>
-                            <h2 id="elc-num" class="inter text-3xl font-bold mt-6 mb-[3px]">16216</h2>
+                            <h2 id="elc-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">16216</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Electricity</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -227,16 +227,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
-                            <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
+                            <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/brac.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Brac Helpline</h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Brac Helpline</h3>
                             <p id="brac-title" class="hind-madurai text-lg text-[#5c5c5c]">Brac</p>
-                            <h2 id="brac-num" class="inter text-3xl font-bold mt-6 mb-[3px]">16445</h2>
+                            <h2 id="brac-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">16445</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">NGO</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -251,16 +251,16 @@
                 </div>
 
                 <!-- single card -->
-                <div class="card bg-white rounded-xl w-[420px] shadow-md shadow-[#00000026]">
+                <div class="card bg-white rounded-xl w-full md:w-[250px] lg:w-[300px] xl:w-[325px] 2xl:w-[420px] shadow-md shadow-[#00000026]">
                     <div class="card-content p-5">
                         <div class="card-header flex justify-between items-center">
-                            <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/emergency.png" class="h-7 w-7" alt=""></div>
+                            <div class="h-[50px] w-[50px] rounded-2xl bg-[#ffe3e2] flex justify-center items-center"><img src="./assets/Bangladesh-Railway.png" class="h-7 w-7" alt=""></div>
                             <div class="cursor-pointer hover:text-red-500 duration-300 btn-heart"><i class="fa-regular fa-heart text-2xl"></i></div>
                         </div>
                         <div class="card-body-sec">
-                            <h3 class="hind-madurai text-2xl font-bold mt-4">Bangladesh Railway Helpline </h3>
+                            <h3 class="hind-madurai text-xl 2xl:text-2xl font-bold mt-4">Bangladesh Railway Helpline </h3>
                             <p id="rail-title" class="hind-madurai text-lg text-[#5c5c5c]">Bangladesh Railway</p>
-                            <h2 id="rail-num" class="inter text-3xl font-bold mt-6 mb-[3px]">163</h2>
+                            <h2 id="rail-num" class="inter text-2xl sm:text-3xl xl:text-2xl 2xl:text-3xl  font-bold mt-6 mb-[3px]">163</h2>
                             <p class="bg-[#f2f2f2] rounded-[50px] py-[6px] px-[16px] w-fit hind-madurai text-lg text-[#5c5c5c]">Travel</p>
                         </div>
                         <div class="card-footer flex justify-between items-center gap-2 mt-6">
@@ -277,7 +277,7 @@
             </div>
 
             <!-- history -->
-            <div class="history-container flex-1/4 bg-white rounded-xl w-fit min-h-[1065px] shadow-md shadow-[#00000026]">
+            <div class="history-container flex-1/4 bg-white rounded-xl w-[95%] md:w-[250px] xl:w-[325px] 2xl:w-full min-h-[100vh] xl:min-h-[1040px] 2xl:min-h-[1065px] shadow-md shadow-[#00000026]">
                 <div class="history-content p-6">
                     <div class="history-content-top flex justify-between items-center">
                         <div>

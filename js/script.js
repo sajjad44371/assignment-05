@@ -56,14 +56,14 @@ function addHistory(a, b) {
     for(const newData of historyData) {
         const div = document.createElement("div");
         div.innerHTML = `
-                        <div class="single-history bg-[#fafafa] rounded-xl">
+                        <div class="single-history bg-[#fafafa] rounded-xl mb-2">
                             <div class="history-content flex justify-between items-center p-4">
                                 <div>
-                                    <h3 class="inter font-semibold text-lg">${newData.name}</h3>
-                                    <p class="hind-madurai text-lg text-[#5c5c5c]">${newData.num}</p>
+                                    <h3 class="inter 2xl:text-lg font-semibold">${newData.name}</h3>
+                                    <p class="hind-madurai 2xl:text-lg text-[#5c5c5c]">${newData.num}</p>
                                 </div>
                                 <div>
-                                    <p class="hind-madurai text-lg text-[#5c5c5c]">${newData.date}</p>
+                                    <p class="hind-madurai 2xl:text-lg text-[#5c5c5c]">${newData.date}</p>
                                 </div>
                             </div>
                         </div>
@@ -151,22 +151,6 @@ document.getElementById("clear-history")
     })
 
 // copy button event =================================================================================================
-function copyTextToClipboard(text) {
-    if(navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
-    } else {
-      // fallback (older browsers)
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      return Promise.resolve();
-    }
-  }
-
-
 const buttonCopy = document.getElementsByClassName("btn-copy");
 for(const btnCopy of buttonCopy) {
     btnCopy.addEventListener("click", function(){
@@ -180,18 +164,16 @@ for(const btnCopy of buttonCopy) {
         document.getElementById("copy-count").innerText = finalCopyCount;
 
         // copy to clipboard 
-        const targetId = button.getAttribute("data-target"); // যেমন "anti-num"
+        const targetId = this.getAttribute("data-target");
         const numberElement = document.getElementById(targetId);
 
-        if(numberElement) {
-            const number = numberElement.innerText.trim();
-            copyTextToClipboard(number)
-                .then(() => {
-                    alert("Copied: " + number);
-                })
-                .catch(err => {
-                    alert("Failed to copy");
-                    console.error(err);
+        if (numberElement) {
+                const number = numberElement.innerText;
+
+                navigator.clipboard.writeText(number).then(() => {
+                    alert("Number copied: " + number);
+                }).catch(err => {
+                    console.error("Failed to copy: ", err);
                 });
         }
 
