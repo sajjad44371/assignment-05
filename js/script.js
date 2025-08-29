@@ -155,14 +155,6 @@ const buttonCopy = document.getElementsByClassName("btn-copy");
 for(const btnCopy of buttonCopy) {
     btnCopy.addEventListener("click", function(){
         
-
-        // copy count 
-        const copyCounter = parseInt(document.getElementById("copy-count").innerText);
-        let count = 0;
-        count++;
-        const finalCopyCount = copyCounter + count;
-        document.getElementById("copy-count").innerText = finalCopyCount;
-
         // copy to clipboard 
         const targetId = this.getAttribute("data-target");
         const numberElement = document.getElementById(targetId);
@@ -176,6 +168,13 @@ for(const btnCopy of buttonCopy) {
                     console.error("Failed to copy: ", err);
                 });
         }
+
+        // copy count 
+        const copyCounter = parseInt(document.getElementById("copy-count").innerText);
+        let count = 0;
+        count++;
+        const finalCopyCount = copyCounter + count;
+        document.getElementById("copy-count").innerText = finalCopyCount;
 
     })
 }
